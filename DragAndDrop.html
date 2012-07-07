@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>It's all about the flow</title>
+    <script src="script.js" type="text/javascript"></script>
+    <!-- script.js will be the Javascript file where we will put
+                our drag and drop functions. -->
+    <style>
+        .Instructions
+        {
+            font-family: Arial;
+            font-size: 12px;
+            font-style: italic;
+            color: #888888;
+            padding: 50px;
+            width: 350px;
+        }
+        #t0
+        {
+            font-family: Arial;
+            font-size: 32px;
+            position: absolute;
+            left: 144px;
+            top: 340px;
+        }
+        #t1
+        {
+            font-family: Arial;
+            font-size: 32px;
+            position: absolute;
+            left: 117px;
+            top: 278px;
+        }
+        #t2
+        {
+            font-family: Arial;
+            font-size: 32px;
+            position: absolute;
+            left: 163px;
+            top: 392px;
+        }
+        #t3
+        {
+            font-family: Arial;
+            font-size: 32px;
+            position: absolute;
+            left: 89px;
+            top: 336px;
+        }
+        #t4
+        {
+            font-family: Arial;
+            font-size: 32px;
+            position: absolute;
+            left: 194px;
+            top: 327px;
+        }
+        .Text
+        {
+            font-family: Arial;
+            font-size: 32px;
+            position: absolute;
+        }
+        .draggable
+        {
+            cursor: progress;
+        }
+    </style>
+</head>
+<body>
+    <div class="Instructions">
+        Textgrupperna nedan skall gå att dra och släppa på linjen på sidan för att bilda
+        meningen "It's all about the flow". Texten på linjen skall vara centrerad. Visuell
+        indikation önskas på var man kan och inte kan släppa, samt när man har släppt på
+        rätt ställe. Gärna animerat.
+        <br />
+        <br />
+        Skall fungera i IE9, samt senaste släppta versionerna av Firefox, Safari och Chrome.
+        Bonuspoäng om det fungerar med touch på iOS och/eller Android.
+        <br />
+        <br />
+        Externa bibliotek är EJ tillåtna.
+    </div>
+    <div id="t3" class="draggable">
+        It's</div>
+    <div id="t1" class="draggable">
+        all</div>
+    <div id="t2" class="draggable">
+        about</div>
+    <div id="t0" class="draggable">
+        the</div>
+    <div id="t4" class="draggable">
+        flow</div>
+    <div id="theLine" style="position: absolute; top: 550px; left: 50px; width: 300px;
+        height: 1px; background-color: #cccccc;">
+    </div>
+</body>
+</html>
