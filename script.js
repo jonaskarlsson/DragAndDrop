@@ -13,13 +13,13 @@ document.onmousemove = mouseMove;
 document.onmouseover = mouseOver;
 document.onmouseout = mouseOut;
 
- 
+
 
 
 function mouseOver(e) {
 	obj = e.target;
-	
-	if(obj.className == "draggable") {
+
+	if (obj.className == "draggable") {
 		isMouseOver = true;
 	}
 	else {
@@ -34,8 +34,8 @@ function mouseOut(e) {
 }
 
 function mouseDown(e) {
-	if(!e) {
-		if(window.event) {
+	if (!e) {
+		if (window.event) {
 			e = window.event;
 		}
 		else {
@@ -43,7 +43,7 @@ function mouseDown(e) {
 			return;
 		}
 	}
-	if(isMouseOver) {
+	if (isMouseOver) {
 		isMouseDown = true;
 		offsetX = e.clientX - parseInt(obj.offsetLeft);
 		offsetY = e.clientY - parseInt(obj.offsetTop);
@@ -53,15 +53,15 @@ function mouseDown(e) {
 
 function mouseUp() {
 	isMouseDown = false;
-	if(obj != null) {
+	if (obj != null) {
 		obj.style.zIndex = zindex;
 		zindex++;
 	}
 }
 
 function mouseMove(e) {
-	if(!e) {
-		if(window.event) {
+	if (!e) {
+		if (window.event) {
 			e = window.event;
 		}
 		else {
@@ -69,7 +69,7 @@ function mouseMove(e) {
 			return;
 		}
 	}
-	if(isMouseDown && isMouseOver && obj != null) {
+	if (isMouseDown && isMouseOver && obj != null) {
 		obj.style.position = "absolute";
 		obj.style.margin = "0px";
 		obj.style.left = e.clientX - offsetX + "px";
