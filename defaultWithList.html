@@ -7,38 +7,43 @@
     <script type="text/javascript" src="scriptWithList.js"></script>
     <!-- script.js will be the Javascript file where we will put
                 our drag and drop functions. -->
-    <style>
-       .drag, .list
- {
-   width: 150px;
- }
- 
-.drag
- {
-   z-index: 100;
-   position:absolute;
-   opacity: .50;
-   filter: alpha(opacity=50);
- }
- 
-.list
- {
-   position:relative;
-   z-index: 1;
-   opacity: 1;
-   filter: alpha(opacity=100);
-   top: 0px;
-   left: 0px;
- }
+    <style type="text/css">
+        .drag, .list
+        {
+            width: 150px;
+        }
+        
+        .drag
+        {
+            z-index: 100;
+            position: absolute;
+            opacity: .50;
+            filter: alpha(opacity=50);
+        }
+        
+        .list
+        {
+            position: relative;
+            z-index: 1;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            top: 0px;
+            left: 0px;
+        }
     </style>
 </head>
 <body onload="load()">
-    <div id="list" style="position:relative;border:solid 1px black;width:150px;">
-   <div id="e1" style="height:50px;background-color:Green;" class="list"></div>
-   <div id="e2" style="height:140px;background-color:Blue;" class="list"></div>
-   <div id="e3" style="height:100px;background-color:Red;" class="list"></div>
-   <div id="e4" style="height:30px;background-color:Yellow;" class="list"></div>
-   <div id="e5" style="height:70px;background-color:Fuchsia" class="list"></div>
- </div>
+    <div id="list" style="position: relative; border: solid 1px black; width: 150px;">
+        <div id="e1" style="height: 50px; background-color: Green;" class="list">
+        </div>
+        <div id="e2" style="height: 140px; background-color: Blue;" class="list">
+        </div>
+        <div id="e3" style="height: 100px; background-color: Red;" class="list">
+        </div>
+        <div id="e4" style="height: 30px; background-color: Yellow;" class="list">
+        </div>
+        <div id="e5" style="height: 70px; background-color: Fuchsia" class="list">
+        </div>
+    </div>
 </body>
 </html>
