@@ -69,9 +69,9 @@ function mouseMove(e) {
 			return;
 		}
 	}
-if (isMouseDown && isMouseOver && obj != null) {
+	if (isMouseDown && isMouseOver && obj != null) {
 
-    
+
 		obj.style.position = "absolute";
 		obj.style.margin = "0px";
 		obj.style.left = e.clientX - offsetX + "px";
@@ -82,28 +82,25 @@ if (isMouseDown && isMouseOver && obj != null) {
 }
 
 function intersect(obj) {
-    var rectA = {
-        left: 10,
-        top: 10,
-        right: 30,
-        bottom: 30
-    };
+	var rectA = {
+		left: 0,
+		top: 0,
+		right: 150,
+		bottom: 150
+	};
 
-    var divs = [
-    { class: 'A', top: 278, left: 300 , height: 300, width: 300 }
-];
 
-    
-        for (var j =0; j < divs.length; j++) {
-            var I = divs[j];
+	obj.style.background = "#FF0000";
+	if ((rectA.left <= (obj.offsetWidth + obj.offsetLeft) &&
+		   obj.offsetLeft <= rectA.right &&
+		   rectA.top <= obj.style.posBottom &&
+		   obj.style.posTop <= rectA.bottom)) {
+		obj.style.background = "#008000";
+		//alert(
+		//    I.class + " collides with " + obj.id);
 
-            if ((rectA.left > obj.style.posLeft || 
-           rectA.right < obj.style.posRight || 
-           rectA.top > obj.style.posTop ||
-           rectA.bottom < obj.style.posBottom)){
-                alert(
-                I.class + " collides with " + obj.id);}
-        }
+	}
+	//}
 
 }
 
