@@ -82,28 +82,56 @@ function mouseMove(e) {
 }
 
 function intersect(obj) {
-    var rectA = {
-        left: 50,
-        top: 50,
+    var t0 = {
+        left: 70,
+        top: 550,
         right: 100,
-        bottom: 150
+        bottom: 520
     };
 
+    var t1 = {
+        left: 50,
+        top: 550,
+        right: 100,
+        bottom: 520
+    };
+
+    var t2 = {
+        left: 175,
+        top: 550,
+        right: 100,
+        bottom: 520
+    };
+
+    var t3 = {
+        left: 50,
+        top: 550,
+        right: 100,
+        bottom: 520
+    };
+
+    var t4 = {
+        left: 50,
+        top: 550,
+        right: 100,
+        bottom: 520
+    };
 
     obj.style.background = "#FF0000";
+
+
     if (
-            (rectA.left <= (obj.offsetWidth + obj.offsetLeft)) &&
-            (obj.offsetLeft <= rectA.right) &&
-            (rectA.top <= (obj.offsetTop + obj.offsetHeight)) &&
-            (obj.offsetTop <= rectA.bottom)
+            (t0.left <= (obj.offsetWidth + obj.offsetLeft)) &&
+            (obj.offsetLeft <= t0.right) &&
+            (t0.top <= (obj.offsetTop + obj.offsetHeight)) &&
+            (obj.offsetTop <= t0.bottom)
         ) {
         obj.style.background = "#008000";
-        //alert(
-        //    I.class + " collides with " + obj.id);
+        alert('Den sitter rätt');
+        obj.style.background = "#FFFFFF";
+
 
     }
-    //}
-
-}
+    }
 
 
