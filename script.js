@@ -14,8 +14,6 @@ document.onmouseover = mouseOver;
 document.onmouseout = mouseOut;
 
 
-
-
 function mouseOver(e) {
     obj = e.target;
 
@@ -39,7 +37,7 @@ function mouseDown(e) {
             e = window.event;
         }
         else {
-            alert('Your browser does not support the event handler. Please upgrade or try a different browser.');
+            alert('Din webbläsare klarar inte av detta javascript. Var vänlig att uppgradera till en nyare version.');
             return;
         }
     }
@@ -65,7 +63,7 @@ function mouseMove(e) {
             e = window.event;
         }
         else {
-            alert('Your browser does not support the event handler. Please upgrade or try a different browser.');
+            alert('Din webbläsare klarar inte av detta javascript. Var vänlig att uppgradera till en nyare version.');
             return;
         }
     }
@@ -129,8 +127,6 @@ function intersect(obj) {
             obj.style.background = "#008000";
             alert('Den sitter rätt');
             obj.style.background = "#FFFFFF";
-
-
         }
     }
 
@@ -144,8 +140,6 @@ function intersect(obj) {
             obj.style.background = "#008000";
             alert('Den sitter rätt');
             obj.style.background = "#FFFFFF";
-
-
         }
     }
 
@@ -159,8 +153,6 @@ function intersect(obj) {
             obj.style.background = "#008000";
             alert('Den sitter rätt');
             obj.style.background = "#FFFFFF";
-
-
         }
     }
 
@@ -174,8 +166,6 @@ function intersect(obj) {
             obj.style.background = "#008000";
             alert('Den sitter rätt');
             obj.style.background = "#FFFFFF";
-
-
         }
     }
 
@@ -189,11 +179,6 @@ function intersect(obj) {
             obj.style.background = "#008000";
             alert('Den sitter rätt');
             obj.style.background = "#FFFFFF";
-
-
         }
     }
-
-    }
-
-
+}
