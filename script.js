@@ -69,12 +69,40 @@ function mouseMove(e) {
 			return;
 		}
 	}
-	if (isMouseDown && isMouseOver && obj != null) {
+if (isMouseDown && isMouseOver && obj != null) {
+
+    
 		obj.style.position = "absolute";
 		obj.style.margin = "0px";
 		obj.style.left = e.clientX - offsetX + "px";
 		obj.style.top = e.clientY - offsetY + "px";
+		obj.style.height = "32px";
+		intersect(obj);
 	}
+}
+
+function intersect(obj) {
+    var rectA = {
+        left: 10,
+        top: 10,
+        right: 30,
+        bottom: 30
+    };
+
+    var divs = [
+    { class: 'A', top: 278, left: 300 , height: 300, width: 300 }
+];
+
+    
+        for (var j =0; j < divs.length; j++) {
+            var I = divs[j];
+
+            if ((I.top <= obj.style.top && (I.top + I.height) >= obj.style.top) ||
+             (obj.style.top <= I.top && (obj.style.top + obj.style.height) >= I.top))
+                alert(
+                I.class + " collides with " + obj);
+        }
+
 }
 
 
