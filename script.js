@@ -97,10 +97,12 @@ function intersect(obj) {
         for (var j =0; j < divs.length; j++) {
             var I = divs[j];
 
-            if ((I.top <= obj.style.top && (I.top + I.height) >= obj.style.top) ||
-             (obj.style.top <= I.top && (obj.style.top + obj.style.height) >= I.top))
+            if ((rectA.left > obj.style.posLeft || 
+           rectA.right < obj.style.posRight || 
+           rectA.top > obj.style.posTop ||
+           rectA.bottom < obj.style.posBottom)){
                 alert(
-                I.class + " collides with " + obj);
+                I.class + " collides with " + obj.id);}
         }
 
 }
