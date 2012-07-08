@@ -83,23 +83,23 @@ function mouseMove(e) {
 
 function intersect(obj) {
     var t0 = {
-        left: 70,
+        left: 245,
         top: 550,
-        right: 100,
+        right: 246,
         bottom: 520
     };
 
     var t1 = {
-        left: 50,
+        left: 125,
         top: 550,
-        right: 100,
+        right: 130,
         bottom: 520
     };
 
     var t2 = {
-        left: 175,
+        left: 180,
         top: 550,
-        right: 100,
+        right: 185,
         bottom: 520
     };
 
@@ -111,27 +111,89 @@ function intersect(obj) {
     };
 
     var t4 = {
-        left: 50,
+        left: 300,
         top: 550,
-        right: 100,
+        right: 310,
         bottom: 520
     };
 
     obj.style.background = "#FF0000";
 
-
-    if (
+    if (obj.id == 't0') {
+        if (
             (t0.left <= (obj.offsetWidth + obj.offsetLeft)) &&
             (obj.offsetLeft <= t0.right) &&
             (t0.top <= (obj.offsetTop + obj.offsetHeight)) &&
             (obj.offsetTop <= t0.bottom)
         ) {
-        obj.style.background = "#008000";
-        alert('Den sitter rätt');
-        obj.style.background = "#FFFFFF";
+            obj.style.background = "#008000";
+            alert('Den sitter rätt');
+            obj.style.background = "#FFFFFF";
 
 
+        }
     }
+
+    if (obj.id == 't1') {
+        if (
+            (t1.left <= (obj.offsetWidth + obj.offsetLeft)) &&
+            (obj.offsetLeft <= t1.right) &&
+            (t1.top <= (obj.offsetTop + obj.offsetHeight)) &&
+            (obj.offsetTop <= t1.bottom)
+        ) {
+            obj.style.background = "#008000";
+            alert('Den sitter rätt');
+            obj.style.background = "#FFFFFF";
+
+
+        }
+    }
+
+    if (obj.id == 't2') {
+        if (
+            (t2.left <= (obj.offsetWidth + obj.offsetLeft)) &&
+            (obj.offsetLeft <= t2.right) &&
+            (t2.top <= (obj.offsetTop + obj.offsetHeight)) &&
+            (obj.offsetTop <= t2.bottom)
+        ) {
+            obj.style.background = "#008000";
+            alert('Den sitter rätt');
+            obj.style.background = "#FFFFFF";
+
+
+        }
+    }
+
+    if (obj.id == 't3') {
+        if (
+            (t3.left <= (obj.offsetWidth + obj.offsetLeft)) &&
+            (obj.offsetLeft <= t3.right) &&
+            (t3.top <= (obj.offsetTop + obj.offsetHeight)) &&
+            (obj.offsetTop <= t3.bottom)
+        ) {
+            obj.style.background = "#008000";
+            alert('Den sitter rätt');
+            obj.style.background = "#FFFFFF";
+
+
+        }
+    }
+
+    if (obj.id == 't4') {
+        if (
+            (t4.left <= (obj.offsetWidth + obj.offsetLeft)) &&
+            (obj.offsetLeft <= t4.right) &&
+            (t4.top <= (obj.offsetTop + obj.offsetHeight)) &&
+            (obj.offsetTop <= t4.bottom)
+        ) {
+            obj.style.background = "#008000";
+            alert('Den sitter rätt');
+            obj.style.background = "#FFFFFF";
+
+
+        }
+    }
+
     }
 
 
